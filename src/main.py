@@ -23,7 +23,7 @@ def Main():
     if UsuarioLogueado['Rol'] == "ADMIN":
       usuarios=Menuadmin(usuarios)
     elif UsuarioLogueado['Rol'] == "ESTUDIANTE":
-      MenuEstudiante()
+      MenuEstudiante(UsuarioLogueado)
     elif UsuarioLogueado['Rol'] == "DOCENTE":
       MenuDocente()
   elif Estado==2:

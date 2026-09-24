@@ -1,5 +1,6 @@
 from validaciones import ValidarEntero
-def MenuEstudiante():
+from Estudiante import MatricularCurso
+def MenuEstudiante(UsuarioLogueado):
   Opcion=1
   while Opcion!=5:
     print('Opciones del menu:')
@@ -11,6 +12,8 @@ def MenuEstudiante():
     Opcion=ValidarEntero('Ingrese una opcion: ')
     if Opcion == 1:
       print("Matricular Curso")
+      MatricularCurso(UsuarioLogueado)
+
     elif Opcion == 2:
       print("Listar Cursos Matriculados")
     elif Opcion == 3:
